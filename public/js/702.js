@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[702],{744:(s,e)=>{e.Z=(s,e)=>{const n=s.__vccOpts||s;for(const[s,t]of e)n[s]=t;return n}},702:(s,e,n)=>{n.r(e),n.d(e,{default:()=>c});var t=n(821);const u={setup:function(){}};const c=(0,n(744).Z)(u,[["render",function(s,e,n,u,c,r){return(0,t.wg)(),(0,t.iD)("h1",null," Hello, Vuejs with Laravelsss ")}]])}}]);

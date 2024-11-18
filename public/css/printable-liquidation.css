@@ -1,0 +1,72 @@
+@media print {
+    @page {
+        size: A4 portrait !important;
+    }
+
+    #printableDiv {
+        display: block !important;
+    }
+
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        /* Adjust as needed */
+        text-align: center;
+        padding: 1px;
+        margin-bottom: 1%;
+    }
+
+    .table-container {
+        margin-top: 1% !important;
+        border: 1px solid black;
+        /* Initial margin for first page */
+    }
+
+    .table-container:after {
+        content: "";
+        display: block;
+        height: 0;
+        /* Adjusted for spacing */
+        margin-top: 1% !important;
+        /* Space for subsequent pages */
+        /* page-break-before: always; */
+    }
+
+    table {
+        width: 100%;
+        border: 1px solid black;
+        /* border-collapse: collapse; */
+    }
+
+    thead,
+    tbody,
+    tr,
+    td {
+        border: 1px solid black;
+        font-family: 'Times New Roman';
+    }
+
+    tbody:after {
+        margin-top: 50%;
+        page-break-before: always;
+    }
+
+    tr:after {
+        margin-top: 50%;
+        page-break-before: always;
+    }
+
+    thead,
+    thead:after {
+        display: table-header-group !important;
+    }
+
+    .p-inside-table {
+        margin: 3% !important;
+        font-size: 12px !important;
+    }
+
+}
